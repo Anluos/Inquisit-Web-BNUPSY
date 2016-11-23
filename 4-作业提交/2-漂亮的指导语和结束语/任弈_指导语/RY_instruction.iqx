@@ -1,0 +1,37 @@
+﻿<item instruction>
+/1="instruction.png"
+</item>
+
+<item endinstruction>
+/1="endinstruction.png"
+</item>
+ 
+
+<picture instruction>
+/items = instruction
+/size = (100%,100%)
+</picture>
+
+<picture endinstruction>
+/items = endinstruction
+/size = (100%,100%)
+</picture>
+
+//One trial should also be OK. 
+<trial instructions>  
+/ stimulustimes = [1=instruction]
+/ correctresponse = (" ")
+/ errormessage = false
+/ recorddata = false
+</trial>
+<trial endinstructions>  
+/ stimulustimes = [1=endinstruction]
+/ correctresponse = (" ")
+/ errormessage = false
+/ recorddata = false
+</trial>
+
+
+<block instruction>
+/trials = [1=instructions;2=endinstructions]
+</block>
