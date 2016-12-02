@@ -1,0 +1,154 @@
+﻿<item pic>
+/1="pic1.jpg"
+/2="pic2.jpg"
+/3="pic3.jpg"
+/4="pic4.jpg"
+/5="pic5.jpg"
+/6="pic6.jpg"
+/7="pic7.jpg"
+/8="pic8.jpg"
+/9="pic9.jpg"
+/10="pic10.jpg"
+/11="pic11.jpg"
+/12="pic12.jpg"
+/13="pic13.jpg"
+/14="pic14.jpg"
+/15="pic15.jpg"
+</item>
+<item graypic>
+/1="graypic.jpg"
+</item>
+
+<instruct myinstruct>
+	/nextkey = (" ")
+	/fontstyle = ("楷体", 3%, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/screencolor = (255,255,255)
+	/lastlabel = "请鼠标点击此处继续"
+</instruct>
+
+
+<page begininstruction1>^^^^欢迎您参与我们的实验！^^我们的实验是测试您对灰度图片的感觉阈限。^^请您尽量准确快速的对我们呈现的刺激材料进行反应！^^</page>
+
+<page begininstruction2>^^^^将呈现4张图片，请您选择与其他3张不一样的图片，并用鼠标点击以选择</page>
+
+<page endinstruction2>^^^^非常感谢您的参与</page>
+
+
+
+<picture 1>
+	/items = pic
+	/position = (25,25)
+	/size = (500,500)
+</picture>
+<picture 2>
+	/items = graypic
+	/position = (75,25)
+	/size = (500,500)
+</picture>
+<picture 3>
+	/items = graypic
+	/position = (25,75)
+	/size = (500,500)
+</picture>
+<picture 4>
+	/items = graypic
+	/position = (75,75)
+	/size = (500,500)
+</picture>
+
+<trial pic1>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic2>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic3>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic4>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic5>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic6>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic7>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic8>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic9>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic10>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic11>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic12>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic13>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic14>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+<trial pic15>
+	/stimulusframes = [1=1,2,3,4]
+	/validresponse = (1,2,3,4)
+	/correctresponse = (1)
+</trial>
+
+
+<block startblock>
+	/screencolor = (255,255,255)
+	/preinstructions = (begininstruction2)
+</block>
+
+<block picblock>
+	/trials = [1=pic1;2=pic2;3=pic3;4=pic4;5=pic5;6=pic6;7=pic7;8=pic8;9=pic9;10=pic10;11=pic11;12=pic12;13=pic13;14=pic14;15=pic15]
+</block>
+
+<expt>
+	/preinstructions = (begininstruction1)
+	/ blocks = [1 = startblock; 2 = picblock]
+	/postinstructions = (endinstruction2)
+</expt>
+
+<defaults>
+	/inputdevice = mouse
+</defaults>

@@ -69,3 +69,6 @@ date	time	group	subject	build	blocknum	trialnum	blockcode	trialcode	pretrialpaus
 112516	00:17:20	1	1	4.0.9.0	1	1	exerciseblk	MR	500	0	0	0	0	0	Ctrl+'Q'	1	1011	0
 112516	00:25:32	1	1	4.0.9.0	2	1	exerciseblk	NR	500	0	0	0	0	0	33	1	1513	0
 112516	00:25:32	1	1	4.0.9.0	2	2	exerciseblk	MR	500	0	0	0	0	0	Ctrl+'Q'	1	4746	0
+113016	23:15:28	1	1	4.0.9.0	2	1	exerciseblk	MR	500	0	0	0	0	0	33	0	7843	0
+113016	23:15:28	1	1	4.0.9.0	2	2	exerciseblk	NR	500	0	0	0	0	0	33	1	713	0
+113016	23:15:28	1	1	4.0.9.0	2	3	exerciseblk	MR	500	0	0	0	0	0	Ctrl+'Q'	1	2687	0
