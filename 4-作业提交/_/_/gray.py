@@ -1,25 +1,17 @@
+work_dir="D:/Iquisit/class/gray/"
+
 from PIL import Image
-from numpy import array
-work_dir = "D:/game/"
-image_file = Image.open(work_dir+"wall.jpg") # open colour image
-image_file = image_file.convert('1') # convert image to black and white
-image_file.save(work_dir+"wallg.jpg")
-im = array(Image.open(work_dir+"wallg.jpg"))
-im2= Image.fromarray(im*0.5)
-im2 = im2.convert("RGB")
-im2.save(work_dir+"gray1.jpg")
-im2= Image.fromarray(im*0.75)
-im2 = im2.convert("RGB")
-im2.save(work_dir+"gray2.jpg")
-im2= Image.fromarray(im*0.875)
-im2 = im2.convert("RGB")
-im2.save(work_dir+"gray3.jpg")
-im2= Image.fromarray(im*0.9375)
-im2 = im2.convert("RGB")
-im2.save(work_dir+"gray4.jpg")
-im2= Image.fromarray(im*0.96875)
-im2 = im2.convert("RGB")
-im2.save(work_dir+"gray5.jpg")
-im2= Image.fromarray(im*0.984375)
-im2 = im2.convert("RGB")
-im2.save(work_dir+"gray6.jpg")
+im = Image.open('Manakin.jpg').convert('L')
+#im = Image.open('blank.bmp').convert('L')
+from PIL import ImageDraw
+draw = ImageDraw.Draw(im)
+for x in range(1, 17):
+    for i in range(0, list(im.size)[0]):
+            for j in range(0, list(im.size)[1]):
+                    color = im.getpixel((i, j))
+                    #改变灰度值
+                    color = color - 2
+                    point = [i, j]
+                    draw.point(point, color)
+                    #在每个点画出来~~
+    im.save('pic'+str(x-1)+'.jpg')

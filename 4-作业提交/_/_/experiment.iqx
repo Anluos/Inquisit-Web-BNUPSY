@@ -1,0 +1,271 @@
+﻿
+<picture pic01>
+	/erase = true(0,0,0)
+	/position = (12%,50%)
+	/items = ("pic0.jpg")
+</picture>
+<picture pic03>
+	/erase = true(0,0,0)
+	/position = (62%,50%)
+	/items = ("pic0.jpg")
+</picture>
+<picture pic04>
+	/erase = true(0,0,0)
+	/position = (88%,50%)
+	/items = ("pic0.jpg")
+</picture>
+<picture pic1>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic1.jpg")
+</picture>
+<picture pic2>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic2.jpg")
+</picture>
+<picture pic3>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic3.jpg")
+</picture>
+<picture pic4>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic4.jpg")
+</picture>
+<picture pic5>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic5.jpg")
+</picture>
+<picture pic6>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic6.jpg")
+</picture>
+<picture pic7>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic7.jpg")
+</picture>
+<picture pic8>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic8.jpg")
+</picture>
+<picture pic9>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic9.jpg")
+</picture>
+<picture pic10>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic10.jpg")
+</picture>
+<picture pic11>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic11.jpg")
+</picture>
+<picture pic12>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic12.jpg")
+</picture>
+<picture pic13>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic13.jpg")
+</picture>
+<picture pic14>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic14.jpg")
+</picture>
+<picture pic15>
+/erase = true(0,0,0)
+/position = (38%,50%)
+/items = ("pic15.jpg")
+</picture>
+============================================
+<text correctmsg>
+	/items = ("√")
+	/fontstyle = ("Arial", 10%)
+	/txbgcolor = (transparent)
+	/txcolor = (255,255,255)
+</text>
+
+<text errormsg>
+	/items = ("×")
+	/fontstyle = ("Arial", 10%)
+	/txbgcolor = (transparent)
+	/txcolor = (255,255,255)
+</text>
+
+
+<text fixation>
+	/items = ("+")
+	/fontstyle = ("Arial", 40ptc)
+	/txbgcolor = (transparent)
+	/txcolor = (255,255,255)
+</text>
+
+<text f>
+	/items = ("+")
+	/fontstyle = ("Arial", 80ptc)
+	/txbgcolor = (transparent)
+	/txcolor = (0,0,0)
+</text>
+
+<instruct myinstruct>
+	/nextkey = (" ")
+	/fontstyle = ("楷体", 4.14%, false, false, false, false, 5, 1)
+	/txcolor = (255,255,255)
+	/screencolor = (0,0,0)
+	/lastlabel = "点击继续"
+	/windowsize = (1920,1080)
+
+</instruct>
+
+<page instruction>    ^^              ^^            ^^欢迎您来参加我们的实验！^^这是一个关于感觉阈限的实验，实验中您会一次看到四张图片^^请您在确保正确的情况下，尽快用鼠标左键点击灰度上与其他三张不同的一张图片^^如对规则仍有疑问，请在实验开始前联系实验人员^^若没有疑问，点击右下角开始</page>
+
+<page endinstruction>        ^^          ^^         ^^实验结束！请与实验人员联系！^^再次感谢您的参与！ </page>
+============================================
+<trial pic1>
+	/validresponse = (pic01,pic1,pic03,pic04)
+	/correctresponse = (pic1)        //设置某图片为正确反应
+	/pretrialpause = 500
+	/stimulusframes = [1=fixation;99=f;100=pic01,pic1,pic03,pic04]    //一个trail可以呈现4个图片
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+<trial pic2>
+/validresponse = (pic01,pic2,pic03,pic04)
+/correctresponse = (pic2)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;80=f;100=pic01,pic2,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic3>
+/validresponse = (pic01,pic3,pic03,pic04)
+/correctresponse = (pic3)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;85=f;100=pic01,pic3,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic4>
+/validresponse = (pic01,pic4,pic03,pic04)
+/correctresponse = (pic4)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;90=f;100=pic01,pic4,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic5>
+/validresponse = (pic01,pic5,pic03,pic04)
+/correctresponse = (pic5)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;95=f;100=pic01,pic5,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic6>
+/validresponse = (pic01,pic6,pic03,pic04)
+/correctresponse = (pic6)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;85=f;100=pic01,pic6,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic7>
+/validresponse = (pic01,pic7,pic03,pic04)
+/correctresponse = (pic7)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;85=f;100=pic01,pic7,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic8>
+/validresponse = (pic01,pic8,pic03,pic04)
+/correctresponse = (pic8)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;85=f;100=pic01,pic8,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic9>
+/validresponse = (pic01,pic9,pic03,pic04)
+/correctresponse = (pic9)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;85=f;100=pic01,pic9,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic10>
+/validresponse = (pic01,pic10,pic03,pic04)
+/correctresponse = (pic10)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;85=f;100=pic01,pic10,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic11>
+/validresponse = (pic01,pic11,pic03,pic04)
+/correctresponse = (pic11)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;90=f;100=pic01,pic11,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic12>
+/validresponse = (pic01,pic12,pic03,pic04)
+/correctresponse = (pic12)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;90=f;100=pic01,pic12,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic13>
+/validresponse = (pic01,pic13,pic03,pic04)
+/correctresponse = (pic13)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;90=f;100=pic01,pic13,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic14>
+/validresponse = (pic01,pic14,pic03,pic04)
+/correctresponse = (pic14)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;90=f;100=pic01,pic14,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+<trial pic15>
+/validresponse = (pic01,pic15,pic03,pic04)
+/correctresponse = (pic15)
+/pretrialpause = 500
+/stimulusframes = [1=fixation;90=f;100=pic01,pic15,pic03,pic04]
+/correctmessage = (correctmsg,500)
+/errormessage = (errormsg,500)
+</trial>
+======================================================
+<block exp>
+	/screencolor = (0,0,0)
+	/trials = [1-15=noreplace(pic1,pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9,pic10,pic11,pic12,pic13,pic14,pic15)]
+</block>
+
+<expt >
+	/preinstructions = (instruction)
+	/ blocks = [1=exp]
+	/postinstructions = (endinstruction)
+</expt>
+======================================================
+<defaults>
+	/inputdevice = mouse   //设置鼠标为输入设备
+</defaults>
+
